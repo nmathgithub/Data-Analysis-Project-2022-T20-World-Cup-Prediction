@@ -31,3 +31,6 @@ The data will be trained on the following past T20 World Cup winners:
 - West Indies (2016) 
 - Australia (2021) 
 
+## Methodology
+The code is modularized so that the main file runs from 'wc_stack.py.' 
+
