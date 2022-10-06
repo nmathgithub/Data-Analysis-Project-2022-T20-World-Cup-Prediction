@@ -5,8 +5,12 @@ import numpy as np
 from read_WC_data import Squad_Metrics 
 
 # Assemble Training Data 
-ave_age_07, ave_T20I_exp_07, \
-ave_int_exp_07, total_left_07, \
-total_right_07, total_wicketkeepers_07, \
-total_bowling_options_07 = Squad_Metrics('2007.xlsx')
+# 2007 Data 
 
+# Squad_Metrics returns 
+# ave_age, ave_T20I_exp, ave_int_exp, total_left, total_right, total_wicketkeepers, total_bowling_options
+
+squad_metrics_2007 = Squad_Metrics('2007.xlsx')
+print(squad_metrics_2007)
+squad_metrics_2009 = Squad_Metrics('2009.xlsx')
+print(squad_metrics_2009)
