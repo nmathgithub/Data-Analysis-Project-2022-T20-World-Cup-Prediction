@@ -33,6 +33,10 @@ def Squad_Metrics(team_file):
     # print(total_right)
 
     # Calculate Total Number of Bowling Options 
+    total_all_round_options = np.sum(team_data['AR'])
+    # print(total_all_round_options)
+
+    # Calculate Total Number of All-Round Options 
     total_bowling_options = np.sum(team_data['BO'])
     # print(total_bowling_options)
 
@@ -40,4 +44,4 @@ def Squad_Metrics(team_file):
     total_wicketkeepers = np.sum(team_data['WK'])
     # print(total_wicketkeepers)
 
-    return ave_age, ave_T20I_exp, ave_int_exp, total_left, total_right, total_wicketkeepers, total_bowling_options
+    return ave_age, ave_T20I_exp, ave_int_exp, total_left, total_right, total_wicketkeepers, total_bowling_options, total_all_round_options
